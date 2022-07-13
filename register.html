@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div class="section1">
+    Student Information
+    <form>
+        <h1>
+            <p class="section4"> Registration</p>
+            <label class="section2" for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName"><br>
+            <label class="section2" for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName"><br>
+            <input type="submit" value="REGISTER">
+            <button onclick="register()">SAVE</button>
+            <p id="information"></p>
+            <p><br/></p>
+            <label class="section4" for="classes">Classes</label><br>
+            <h4 class="section4"> Choose Your Classes from the Dropdown Menu</h4>
+            <select name="classesSemester" id="classes" >
+                <option value="classes">CLASSES OPTION</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="english">English</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="social studies">Social Studies</option>
+                <option value="history">History</option>
+                <option value="geography">Geography</option>
+                <option value="foreign language">Foreign Language</option>
+                <option value="economics">Economics</option>
+            </select>
+            <input type="submit" value="SUBMIT">
+        </h1>
+    </form>
+</div>
+<script type="text/javascript" src="registration.txt">
+
+
+    function register()
+    {
+        
+       let first_name = document.getElementById("firstName").value;
+       let last_name = document.getElementById("lastName").value;
+       document.getElementById("information").innerHTML = "First Name: " + first_name +
+           " Last Name: " + last_name
+
+    }
+
+
+
+</script>
+</body>
+</html>
+
+CSS
+
+body
+{
+    text-align: center;
+}
+.section1
+{
+    font-weight: bold;
+    font-size: x-large;
+}
+.section2
+{
+    font-weight: bold;
+    font-size: large;
+}
+.section4
+{
+    font-size: x-large;
+}
+
